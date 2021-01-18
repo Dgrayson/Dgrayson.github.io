@@ -1,0 +1,45 @@
+*{
+    margin: 0; 
+    padding: 0;
+}
+
+body{
+    background-color: #262626;
+}
+
+nav{
+    background-color: #696969;
+    height: 80px;
+    margin-top: 0px;;
+}
+
+nav ul{
+    display: flex; 
+    justify-content: center;
+
+    list-style: none;
+    text-align: center;
+    vertical-align: center;
+    height: 80px;
+}
+
+.container{
+    scroll-snap-type: x mandatory;
+}
+
+.child{
+    scroll-snap-align: start;
+}
+
+#home{
+    background-color: red;
+    height: max-content;
+}
+
+#skills{
+    background-color: blue;
+}
+
+#projects{
+    background-color: yellow;
+}
