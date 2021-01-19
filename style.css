@@ -27,8 +27,9 @@ nav ul{
     scroll-snap-type: x mandatory;
 }
 
-.child{
+section{
     scroll-snap-align: start;
+    height: 100px;
 }
 
 #home{
