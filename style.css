@@ -14,7 +14,7 @@ nav{
 }
 
 nav ul{
-    display: flex; 
+
     justify-content: center;
 
     list-style: none;
@@ -29,7 +29,7 @@ nav ul{
 
 section{
     scroll-snap-align: start;
-    height: 100px;
+    height: 500px;
 }
 
 #home{
