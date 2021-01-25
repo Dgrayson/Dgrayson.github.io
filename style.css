@@ -29,12 +29,15 @@ nav ul{
 
 section{
     scroll-snap-align: start;
-    height: 500px;
+    
 }
 
 #home{
     background-color: red;
     height: max-content;
+    text-align: center;
+    top: 40px; 
+    bottom: 20px;
 }
 
 #skills{
@@ -43,4 +46,22 @@ section{
 
 #projects{
     background-color: yellow;
+}
+
+.card-container{
+        display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.project-card{
+    background-color: #a59a9a;
+    width: 300px; 
+    height: 300px; 
+    border: 1px solid black;
+    padding: 10px; 
+}
+
+.project-card ul {
+    list-style: none;
 }
