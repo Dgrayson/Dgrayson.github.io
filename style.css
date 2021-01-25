@@ -1,0 +1,91 @@
+*{
+    margin: 0; 
+    padding: 0;
+}
+
+body{
+    background-color: #262626;
+}
+
+nav{
+    background-color: #696969;
+    height: 80px;
+    margin-top: 0px;;
+}
+
+nav ul{
+
+    justify-content: center;
+
+    list-style: none;
+    text-align: center;
+    vertical-align: center;
+    height: 80px;
+}
+
+.container{
+    scroll-snap-type: x mandatory;
+}
+
+section{
+    scroll-snap-align: start;
+}
+
+#home{
+
+    height: max-content;
+    text-align: center;
+    top: 40px; 
+    bottom: 20px;
+}
+
+#skills{
+
+}
+
+#projects{
+
+}
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px;
+    text-align: center;
+}
+
+.project-card{
+    background-color: #a59a9a;
+    width: 300px; 
+    height: 300px; 
+    border: 1px solid black;
+    padding: 10px; 
+}
+
+.project-card ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.project-card p{
+    padding: 2em;
+}
+
+.skill-list{
+    text-align: center;
+}
+
+.skill-icons{
+    font-size: 5em;
+}
+
+.skill-bubble{
+    background-color: lightblue;
+    border: 1px solid lightblue;
+    border-radius: 2em;
+    padding: 5px;
+}
