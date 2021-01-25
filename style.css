@@ -29,11 +29,10 @@ nav ul{
 
 section{
     scroll-snap-align: start;
-    
 }
 
 #home{
-    background-color: red;
+
     height: max-content;
     text-align: center;
     top: 40px; 
@@ -41,17 +40,19 @@ section{
 }
 
 #skills{
-    background-color: blue;
+
 }
 
 #projects{
-    background-color: yellow;
+
 }
 
 .card-container{
-        display: flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 50px;
+    text-align: center;
 }
 
 .project-card{
@@ -64,4 +65,27 @@ section{
 
 .project-card ul {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.project-card p{
+    padding: 2em;
+}
+
+.skill-list{
+    text-align: center;
+}
+
+.skill-icons{
+    font-size: 5em;
+}
+
+.skill-bubble{
+    background-color: lightblue;
+    border: 1px solid lightblue;
+    border-radius: 2em;
+    padding: 5px;
 }
