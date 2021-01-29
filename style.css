@@ -4,7 +4,8 @@
 }
 
 body{
-    background-color: #262626;
+    background-color: #00A5CF;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 nav{
@@ -24,27 +25,106 @@ nav ul{
 }
 
 .container{
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: mandatory;
+    scroll-snap-type: y mandatory;
+    scroll-snap-points-y: repeat(100vh);
 }
 
-section{
+.child{
     scroll-snap-align: start;
 }
 
-#home{
+nav {
+    float: left;
+    height: 100vh;
+    width: 100px;
+    z-index: 100; 
+    position: fixed; 
+    text-align: center;
+    vertical-align: middle;
+}
 
-    height: max-content;
+#home{
+    height: 100vh;
     text-align: center;
     top: 40px; 
     bottom: 20px;
+    display: grid; 
+    grid-template-columns: 100px 1fr 1fr;
+    grid-template-rows: 40% auto 40%;
+}
+
+.about-text{
+    text-align: center;
+    margin: auto;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    font-size: 1.5em;
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+}
+
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+
+
+.name{
+    grid-column-start: 3;
+    grid-row-start: 2;
+    grid-column-end: 4;
+    text-align: center;
+    margin: auto;
+}
+
+#home h1{
+    font-size: 5em;
+    float: right;
+}
+
+#home p{
+    right: 24px;
+    font-size: 2em;
 }
 
 #skills{
+    height: 100vh;
+}
 
+.skill-container{
+    padding-top:
+}
+.skill-icons{
+    font-size: 5em;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+.skill-list{
+    text-align: center;
+    padding: 2em;
 }
 
 #projects{
-
+    height: 100vh;
+    background-color: yellow;
 }
 
 .card-container{
@@ -73,14 +153,6 @@ section{
 
 .project-card p{
     padding: 2em;
-}
-
-.skill-list{
-    text-align: center;
-}
-
-.skill-icons{
-    font-size: 5em;
 }
 
 .skill-bubble{
