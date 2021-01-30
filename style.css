@@ -84,8 +84,6 @@ nav {
 100% {opacity:1;}
 }
 
-
-
 .name{
     grid-column-start: 3;
     grid-row-start: 2;
@@ -106,10 +104,18 @@ nav {
 
 #skills{
     height: 100vh;
+    display: grid; 
+    grid-template-columns: 100px 1fr 1fr;
 }
 
-.skill-container{
-    padding-top:
+.skills-left-col{
+    grid-column-start: 2;
+    margin:auto; 
+    text-align: center;
+}
+
+.skills-container{
+    grid-column-start: 3;
 }
 .skill-icons{
     font-size: 5em;
