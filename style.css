@@ -42,6 +42,11 @@ nav {
     position: fixed; 
     text-align: center;
     vertical-align: middle;
+    font-size: 1.5em;
+}
+
+nav ol li{
+    padding-bottom: 1em; 
 }
 
 #home{
@@ -106,12 +111,23 @@ nav {
     height: 100vh;
     display: grid; 
     grid-template-columns: 100px 1fr 1fr;
+    grid-template-rows: 40% auto 40%;  
 }
 
 .skills-left-col{
     grid-column-start: 2;
+    grid-row-start: 2;
     margin:auto; 
     text-align: center;
+    vertical-align: middle;
+   font-size: 2em; 
+   animation: fadeIn ease 5s; 
+   -webkit-animation: fadeIn ease 5s;
+}
+
+.skills-left-col p{
+    padding: 1em; 
+    font-size: 1.5 em;
 }
 
 .skills-container{
