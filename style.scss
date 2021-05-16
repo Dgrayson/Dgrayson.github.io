@@ -1,0 +1,168 @@
+@use 'Skills'; 
+@use 'variables'; 
+
+$main-background-color: #122C34; 
+$navBackgroundColor: #22181C;
+$navBackgroundHover: #4d4246;
+
+*{
+    margin: 0; 
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+
+    background-color: $main-background-color;
+    //background: url("coding.jpg");
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav{
+    background-color: $navBackgroundColor;
+    height: 80px;
+    margin-top: 0px;
+
+    float: top;
+    width: 100vw;
+    z-index: 100; 
+    position: fixed; 
+    font-size: 1.5em;
+
+    ul
+    {
+        list-style: none;
+        margin: 0; 
+        padding: 0; 
+        overflow: hidden; 
+        display: flex; 
+        flex-direction: row; 
+        justify-content: flex-end;
+
+        li a
+        {
+            display: block; 
+            color: white; 
+            padding: 16px; 
+            text-align: center;
+            text-decoration: none;
+        }
+
+        li a:hover
+        {
+            background-color: $navBackgroundHover;
+        }
+    }
+}
+
+.container{
+    scroll-snap-type: mandatory;
+    scroll-snap-type: y mandatory;
+    scroll-snap-points-y: repeat(100vh);
+}
+
+.child{
+    scroll-snap-align: start;
+}
+
+#home{
+    height: 100vh;
+    text-align: center;
+    top: 40px; 
+    bottom: 20px;
+    display: grid; 
+    grid-template-columns: 100px 1fr 1fr;
+    grid-template-rows: 40% auto 40%;
+
+
+    h1{
+        font-size: 5em;
+        float: right;
+    }
+    
+    p{
+        right: 24px;
+        font-size: 2em;
+    }
+
+}
+
+.about-text{
+    text-align: center;
+    margin: auto;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    font-size: 1.5em;
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+}
+
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+.name{
+    grid-column-start: 3;
+    grid-row-start: 2;
+    grid-column-end: 4;
+    text-align: center;
+    margin: auto;
+}
+
+
+#projects{
+    height: 100vh;
+
+}
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px;
+    text-align: center;
+}
+
+.project-card{
+    background-color: #398EA7;
+    width: 300px; 
+    height: 300px; 
+    border: 1px solid black;
+    padding: 10px; 
+}
+
+.project-card ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.project-card p{
+    padding: 2em;
+}
+
+.skill-bubble{
+    background-color: lightblue;
+    border: 1px solid lightblue;
+    border-radius: 2em;
+    padding: 5px;
+}
