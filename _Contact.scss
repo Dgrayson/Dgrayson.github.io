@@ -1,0 +1,20 @@
+#contact{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 100px 1fr 1fr;
+    grid-template-rows: 40% auto 40%;
+    height: 100vh; 
+    top: 40px; 
+    bottom: 20px;
+}
+
+#contact-form{
+    
+    input[type=text]{
+        background-color: #35525B;
+        width: 40%; 
+        padding: 12px 20px; 
+        margin: 8px 0; 
+        box-sizing: border-box; 
+    }
+}

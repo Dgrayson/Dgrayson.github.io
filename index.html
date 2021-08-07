@@ -10,13 +10,13 @@
     </head>
 
     <body>
-    
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
@@ -26,13 +26,16 @@
                     <div class="about-text">
                         <p >Hi, I'm Darayavaus (D.J) Grayson.
                             <br />
-                            I'm a full-stack software engineer.
+                            I'm a software engineer.
                         </p>
                     </div>
                     <div class="name">
                         <h1>Darayavaus Grayson</h1>
                     </div>
 
+                </section>
+                <section id="about">
+                    <h2>About me</h2>
                 </section>
                 <section id = "skills" class="child">
                     <div class="skills-left-col">
@@ -45,40 +48,31 @@
                         <div class="skill-list">
                             <h2>Programming Languages:</h2>
 
-                            <div class="icon-container">
                                 <i class="devicon-csharp-plain colored skill-icons"></i>
-                                <i class="devicon-c-plain colored skill-icons skill-icons"></i>
                                 <i class="devicon-cplusplus-plain colored skill-icons"></i>
                                 <i class="devicon-javascript-plain colored skill-icons"></i>
                                 <i class="devicon-java-plain colored skill-icons"></i>
-                                <i class="devicon-python-plain colored skill-icons"></i>
-                            </div>
                         </div>
                         <div class="skill-list">
                             <h2>Front-end:</h2>
                         
-                            <div class="icon-container">
+                           <div class="icon-container">
                                 <i class="devicon-react-original colored skill-icons"></i>
-                                <i class="devicon-bootstrap-plain colored skill-icons"></i>
                                 <i class="devicon-html5-plain colored skill-icons"></i>
                                 <i class="devicon-css3-plain colored skill-icons"></i>
-                                <i class="devicon-jquery-plain colored skill-icons"></i>
                                 <i class="devicon-sass-plain colored skill-icons"></i>
                             </div>
                         </div>
                         <div class="skill-list">
                             <h2>Back-end:</h2>
-
-                            <div class="icon-container">
                             <i class="devicon-dot-net-plain colored skill-icons"></i>
                             <i class="devicon-express-original colored skill-icons"></i>
                             <i class="devicon-mysql-plain colored skill-icons"></i>
-                            </div>
+                            <i class="devicon-mongodb-plain colored skill-icons"></i>
                         </div>
                         <div class="skill-list">
                             <h2>Other:</h2>
                             <i class="devicon-git-plain colored skill-icons"></i>
-                        
                         </div>
                     </div>
                 </section>
@@ -122,6 +116,11 @@
 
                         <div class = "project-card">
                             
+                            <span>
+                                <h1>Daily Kanji</h1>
+                            </span>
+
+                            <p>Developed with React this web app pulls a Kanji character from a </p>
                             <ul class="project-skills">
                                 <li class="skill-bubble">HTML</li>
                                 <li class="skill-bubble">CSS</li>
@@ -133,7 +132,22 @@
                         </div>
                     </div>
                 </section>
+                <section id="contact">
+                    
 
+                    <div class="contact-me">
+                        <h2>Contact</h2>
+                        Thanks for taking a look at my porfolio. If you're interested in reaching out send me an email!
+                    </div>
+                    <div>
+                        <form id="contact-form">
+                            <input type="text" value="Name"/>
+                            <input type="email" value = "email" />
+                            <textarea value = "Enter text..." rows="6" cols="50"></textarea>    
+                            <input type="submit" value="Send Email"/>
+                        </form>
+                    </div>
+                </section>
             </div>
         </main>
     </body>

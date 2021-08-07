@@ -1,5 +1,6 @@
 @use 'Skills'; 
 @use 'variables'; 
+@use 'Contact'; 
 
 $main-background-color: #122C34; 
 $navBackgroundColor: #22181C;
@@ -14,7 +15,6 @@ $navBackgroundHover: #4d4246;
 body{
 
     background-color: $main-background-color;
-    //background: url("coding.jpg");
     color: white;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -86,6 +86,11 @@ nav{
         font-size: 2em;
     }
 
+}
+
+#about{
+    height: 100vh; 
+    background-color: #398EA7;
 }
 
 .about-text{
