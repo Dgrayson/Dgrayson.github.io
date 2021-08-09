@@ -1,20 +1,63 @@
 #contact{
     display: grid;
     text-align: center;
-    grid-template-columns: 100px 1fr 1fr;
+    grid-template-columns: repeat(2, 50%);
     grid-template-rows: 40% auto 40%;
     height: 100vh; 
     top: 40px; 
     bottom: 20px;
 }
 
+.contact-me-left-col{
+    grid-row-start: 2;
+
+    h1{
+        font-size: 2em;
+        padding: 20px; 
+    }
+    p{
+        font-size: 1.5em;
+        padding: 2em;
+    }
+
+}
+
+.contact-me-right-col{
+    grid-row-start: 2;
+}
+
 #contact-form{
     
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    width: 60%;
+
     input[type=text]{
-        background-color: #35525B;
-        width: 40%; 
+        background-color: #7bb3c4; 
         padding: 12px 20px; 
         margin: 8px 0; 
         box-sizing: border-box; 
+    }
+
+    input[type=email]{
+        background-color: #7bb3c4;
+        padding: 12px 20px; 
+        margin: 8px 0; 
+        box-sizing: border-box; 
+    }
+
+    textarea{
+        resize: none;
+        background-color: #7bb3c4;
+    }
+
+    input[type=submit]
+    {
+        margin: 10px auto;
+        padding: 10px; 
+        width: 60%;
+        text-align: center;
     }
 }

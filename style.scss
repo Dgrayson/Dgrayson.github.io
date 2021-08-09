@@ -1,6 +1,7 @@
 @use 'Skills'; 
 @use 'variables'; 
 @use 'Contact'; 
+@use 'Projects';
 
 $main-background-color: #122C34; 
 $navBackgroundColor: #22181C;
@@ -23,12 +24,21 @@ nav{
     background-color: $navBackgroundColor;
     height: 80px;
     margin-top: 0px;
+    margin-right: 10px;
 
     float: top;
     width: 100vw;
     z-index: 100; 
     position: fixed; 
     font-size: 1.5em;
+
+    span{
+        float: left;
+        text-align: center;
+        margin: 15px 15px auto;
+        font-size: 1.5em;
+        
+    }
 
     ul
     {
@@ -39,6 +49,7 @@ nav{
         display: flex; 
         flex-direction: row; 
         justify-content: flex-end;
+        margin-right: 1em;
 
         li a
         {
@@ -132,42 +143,3 @@ nav{
 }
 
 
-#projects{
-    height: 100vh;
-
-}
-
-.card-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 50px;
-    text-align: center;
-}
-
-.project-card{
-    background-color: #398EA7;
-    width: 300px; 
-    height: 300px; 
-    border: 1px solid black;
-    padding: 10px; 
-}
-
-.project-card ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 1em;
-}
-
-.project-card p{
-    padding: 2em;
-}
-
-.skill-bubble{
-    background-color: lightblue;
-    border: 1px solid lightblue;
-    border-radius: 2em;
-    padding: 5px;
-}

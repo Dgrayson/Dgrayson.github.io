@@ -11,6 +11,7 @@
 
     <body>
     <nav>
+        <span id="nav-name">Darayavaus Grayson</span>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -36,6 +37,8 @@
                 </section>
                 <section id="about">
                     <h2>About me</h2>
+
+                    
                 </section>
                 <section id = "skills" class="child">
                     <div class="skills-left-col">
@@ -44,8 +47,8 @@
                         <h2>Skills</h2>
                         <p>Here are some of the programming languages, frameworks and other techonologies that I'm most familiar with.</p>
                     </div>
-                    <div class="skills-container">
-                        <div class="skill-list">
+                    <!--<div class="skills-container">-->
+                        <div class="skill-list" style="grid-row-start: 2; grid-row-end: 3;">
                             <h2>Programming Languages:</h2>
 
                                 <i class="devicon-csharp-plain colored skill-icons"></i>
@@ -53,7 +56,7 @@
                                 <i class="devicon-javascript-plain colored skill-icons"></i>
                                 <i class="devicon-java-plain colored skill-icons"></i>
                         </div>
-                        <div class="skill-list">
+                        <div class="skill-list" style="grid-row-start: 3; grid-row-end: 4;">
                             <h2>Front-end:</h2>
                         
                            <div class="icon-container">
@@ -63,28 +66,30 @@
                                 <i class="devicon-sass-plain colored skill-icons"></i>
                             </div>
                         </div>
-                        <div class="skill-list">
+                        <div class="skill-list" style="grid-row-start: 4; grid-row-end: 5;">
                             <h2>Back-end:</h2>
-                            <i class="devicon-dot-net-plain colored skill-icons"></i>
                             <i class="devicon-express-original colored skill-icons"></i>
                             <i class="devicon-mysql-plain colored skill-icons"></i>
-                            <i class="devicon-mongodb-plain colored skill-icons"></i>
+
                         </div>
-                        <div class="skill-list">
-                            <h2>Other:</h2>
-                            <i class="devicon-git-plain colored skill-icons"></i>
-                        </div>
-                    </div>
+                    <!--</div>-->
                 </section>
                 <section id = "projects" class="child">
-
-                    <h2>Projects</h2>
-                    <hr />
-
+                    
+                    <div id="proj-left-col">
+                        <h2>Projects</h2>
+                        <hr />
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    </div>
                     <div class="card-container">
                         <div class="project-card">
 
                             <span><h1>ReactJournal</h1></span>
+
+                            <hr />
+                            <img src="https://via.placeholder.com/200" />
 
                             <p>A full stack react app that allows users to write journal entries. Users are able to save their entires to a MYSQL database and retrive/update them as needed.</p>
                             
@@ -105,7 +110,11 @@
                                 <h1>Exoplanet Tracker</h1>
                             </span>
 
-                            <p></p>
+                            <hr />
+                            <img src="https://via.placeholder.com/200" />
+
+                            <p>Front end app that pulls data from the NASA exoplanet api. Displays the most up to date information on exoplanets using React.</p>
+                            <hr />
                             <ul class="project-skills">
                                 <li class="skill-bubble">HTML</li>
                                 <li class="skill-bubble">CSS</li>
@@ -119,9 +128,13 @@
                             <span>
                                 <h1>Daily Kanji</h1>
                             </span>
+                            <hr />
+                            <img src="https://via.placeholder.com/200" />
 
-                            <p>Developed with React this web app pulls a Kanji character from a </p>
+                            <p>Developed with React this web app pulls a Kanji character from a RESTful api</p>
+                            <hr />
                             <ul class="project-skills">
+                                
                                 <li class="skill-bubble">HTML</li>
                                 <li class="skill-bubble">CSS</li>
                                 <li class="skill-bubble">JavaScript</li>
@@ -133,17 +146,17 @@
                     </div>
                 </section>
                 <section id="contact">
-                    
-
-                    <div class="contact-me">
-                        <h2>Contact</h2>
-                        Thanks for taking a look at my porfolio. If you're interested in reaching out send me an email!
+                    <div class="contact-me-left-col">
+                        <h1>Contact</h1>
+                        <hr />
+                        <p>Looking to get in touch? Send me an email!</p>
                     </div>
-                    <div>
+                    <div class="contact-me-right-col">
                         <form id="contact-form">
-                            <input type="text" value="Name"/>
-                            <input type="email" value = "email" />
-                            <textarea value = "Enter text..." rows="6" cols="50"></textarea>    
+
+                            <input type="email" placeholder = "Email" />
+                            <input type="text" placeholder = "Subject" id="subject"/>
+                            <textarea placeholder = "Enter text..." rows="6" cols="50"></textarea>    
                             <input type="submit" value="Send Email"/>
                         </form>
                     </div>

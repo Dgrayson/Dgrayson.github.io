@@ -1,8 +1,10 @@
 
 #skills{
-    background-color: #35525b;
+    background-color: #418397;
     height: 100vh;
-    display: flex; 
+    display: grid; 
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(5, 1fr);
 }
 
 .skills-left-col{
@@ -12,7 +14,8 @@
     font-size: 2em; 
     animation: fadeIn ease 5s; 
     -webkit-animation: fadeIn ease 5s;
-    
+    grid-row-start: 2;
+    grid-row-end: 5;
 
     p{
         padding: 1em; 
@@ -22,9 +25,11 @@
 
 .skills-container{
     grid-column-start: 2;
-    display: flex; 
-    flex-flow: row;
-    justify-content: space-between;
+    grid-row-start: 2; 
+    grid-row-end: 4;
+    //display: flex; 
+    //flex-flow: column;
+    justify-content: space-around;
     margin: auto; 
 }
  
