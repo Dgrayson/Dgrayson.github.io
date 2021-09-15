@@ -1,2 +1,14 @@
 
 // Background Colors
+$main-background-color: #418054; 
+$navBackgroundColor: #22181C;
+$navBackgroundHover: #4d4246;
+$temp: #122C34; 
+
+$main-color-lightest: lighten($main-background-color, 20%); 
+$main-color-lighter: lighten($main-background-color, 15%); 
+$main-color-light: lighten($main-background-color, 10%); 
+
+$main-color-darkest: darken($main-background-color, 20%); 
+$main-color-darker: darken($main-background-color, 15%); 
+$main-color-dark: darken($main-background-color, 10%); 

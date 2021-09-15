@@ -1,11 +1,8 @@
 @use 'Skills'; 
-@use 'variables'; 
 @use 'Contact'; 
 @use 'Projects';
 
-$main-background-color: #122C34; 
-$navBackgroundColor: #22181C;
-$navBackgroundHover: #4d4246;
+@import 'Variables'; 
 
 *{
     margin: 0; 
@@ -21,7 +18,7 @@ body{
 }
 
 nav{
-    background-color: $navBackgroundColor;
+    background-color: $main-color-darkest;
     height: 80px;
     margin-top: 0px;
     margin-right: 10px;
