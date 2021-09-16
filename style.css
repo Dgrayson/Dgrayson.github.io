@@ -1,5 +1,5 @@
 #skills {
-  background-color: #418397;
+  background-color: #1a202c;
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(2, 50%);
@@ -45,6 +45,7 @@
 }
 
 #contact {
+  background-color: #07090c;
   display: grid;
   text-align: center;
   grid-template-columns: repeat(2, 50%);
@@ -128,7 +129,7 @@
 }
 
 .project-card {
-  background-color: #398EA7;
+  background-color: #2d374c;
   border: 1px solid black;
   padding: 10px;
 }
@@ -165,13 +166,13 @@
 }
 
 body {
-  background-color: #418054;
+  background-color: #1a202c;
   color: white;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 nav {
-  background-color: #1f3c28;
+  background-color: black;
   height: 80px;
   margin-top: 0px;
   margin-right: 10px;

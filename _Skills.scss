@@ -1,7 +1,7 @@
 @import 'Variables'; 
 
 #skills{
-    background-color: #418397;
+    background-color: $main-background-color;
     height: 100vh;
     display: grid; 
     grid-template-columns: repeat(2, 50%);
