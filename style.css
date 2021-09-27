@@ -1,5 +1,5 @@
 #skills {
-  background-color: #1a202c;
+  background-color: #30323D;
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(2, 50%);
@@ -45,7 +45,7 @@
 }
 
 #contact {
-  background-color: #07090c;
+  background-color: #30323D;
   display: grid;
   text-align: center;
   grid-template-columns: repeat(2, 50%);
@@ -103,9 +103,17 @@
 
 #projects {
   height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  grid-template-rows: 80px auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 120px;
+}
+
+#projects-container {
+  margin-top: 40px;
+}
+#projects-container h2 {
+  text-align: center;
+  color: white;
 }
 
 #proj-left-col {
@@ -114,30 +122,32 @@
   font-size: 2em;
   animation: fadeIn ease 5s;
   -webkit-animation: fadeIn ease 5s;
-  text-align: center;
   margin: auto;
 }
 
 .card-container {
-  grid-column-start: 2;
-  grid-row-start: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  display: grid;
   padding: 50px;
-  text-align: center;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: repeat(3, 1fr);
+  color: white;
+  font-size: 1.2em;
 }
 
 .project-card {
-  background-color: #2d374c;
-  border: 1px solid black;
+  background-color: #46495a;
+  border: 1px solid #46495a;
+  border-radius: 16px;
+  box-shadow: 5px 5px #1a1b20;
   padding: 10px;
+  margin: 10px;
 }
 .project-card img {
   float: left;
 }
 .project-card span {
   padding: 10px;
+  text-align: center;
 }
 
 .project-card ul {
@@ -166,14 +176,14 @@
 }
 
 body {
-  background-color: #1a202c;
-  color: white;
+  background-color: #30323D;
+  color: whitesmoke;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 nav {
-  background-color: black;
-  height: 80px;
+  background-color: #030304;
+  height: 50px;
   margin-top: 0px;
   margin-right: 10px;
   float: top;
@@ -181,6 +191,10 @@ nav {
   z-index: 100;
   position: fixed;
   font-size: 1.5em;
+}
+nav #nav-name {
+  color: white;
+  font-size: 1.2em;
 }
 nav span {
   float: left;
@@ -201,7 +215,7 @@ nav ul {
 nav ul li a {
   display: block;
   color: white;
-  padding: 16px;
+  padding: 8px;
   text-align: center;
   text-decoration: none;
 }
@@ -224,22 +238,42 @@ nav ul li a:hover {
   text-align: center;
   top: 40px;
   bottom: 20px;
-  display: grid;
-  grid-template-columns: 100px 1fr 1fr;
-  grid-template-rows: 40% auto 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #home h1 {
   font-size: 5em;
-  float: right;
 }
 #home p {
   right: 24px;
   font-size: 2em;
 }
 
+.home-container {
+  margin: auto;
+  display: inline-block;
+}
+.home-container ul a {
+  text-decoration: none;
+  color: white;
+}
+.home-container ul li {
+  display: inline-block;
+  margin: 10px;
+  padding: 20px;
+  background-color: #46495a;
+  border: 1px solid #46495a;
+  border-radius: 16px;
+  box-shadow: 5px 5px #1a1b20;
+}
+.home-container ul li:hover {
+  background-color: #5d6176;
+}
+
 #about {
   height: 100vh;
-  background-color: #398EA7;
+  background-color: #30323D;
 }
 
 .about-text {

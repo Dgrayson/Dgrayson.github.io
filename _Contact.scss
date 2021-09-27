@@ -1,7 +1,7 @@
 @import 'Variables'; 
 
 #contact{
-    background-color: $main-color-dark;
+    background-color: $main-background-color;
     display: grid;
     text-align: center;
     grid-template-columns: repeat(2, 50%);

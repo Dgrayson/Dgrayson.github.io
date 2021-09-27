@@ -14,36 +14,30 @@
         <span id="nav-name">Darayavaus Grayson</span>
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <!--<li><a href="#contact">Contact</a></li>-->
         </ul>
     </nav>
 
         <main>
             <div class="container">
                 <section id = "home" class="child">
-                    <div class="about-text">
-                        <p >Hi, I'm Darayavaus (D.J) Grayson.
-                            <br />
-                            I'm a software engineer.
-                        </p>
-                    </div>
-                    <div class="name">
+                    <div class="home-container">
                         <h1>Darayavaus Grayson</h1>
-                    </div>
-
-                </section>
-                <section id="about">
-                    <h2>About me</h2>
-
-                    <div id="about-me-content">
-                        <p>
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                        </p>
+                        
+                        <div class="about-text">
+                            <p >
+                                Hi, I'm Darayavaus (D.J) Grayson.
+                                <br />
+                                I'm a software engineer with 3 years of work expereince based in Orlando. I love making all kinds of software 
+                            </p>
+                        </div>
+                        <ul>
+                            <li>Resume</li>
+                            <li><a href="https://www.github.com/dgrayson" target="_blank">Github</a></li>
+                            <li><a href="https://www.linkedin.com/in/darayavaus-grayson-1a8018126/" target="_blank">Linkedin</a></li>
+                        </ul>
                     </div>
                 </section>
                 <section id = "skills" class="child">
@@ -82,28 +76,18 @@
                 </section>
                 <section id = "projects" class="child">
                     
-                    <div id="proj-left-col">
+                    <div id="projects-container">
                         <h2>Projects</h2>
-                        <hr />
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                    </div>
+
                     <div class="card-container">
                         <div class="project-card">
 
                             <span><h1>ReactJournal</h1></span>
 
-                            <hr />
-                            <img src="https://via.placeholder.com/200" />
-
                             <p>A full stack react app that allows users to write journal entries. Users are able to save their entires to a MYSQL database and retrive/update them as needed.</p>
                             
                             <hr />
                             <ul class="project-skills">
-                                <li class="skill-bubble">HTML</li>
-                                <li class="skill-bubble">CSS</li>
-                                <li class="skill-bubble">JavaScript</li>
                                 <li class="skill-bubble">ReactJS</li>
                                 <li class="skill-bubble">Express.js</li>
                                 <li class="skill-bubble">MySQL</li>
@@ -116,15 +100,9 @@
                                 <h1>Exoplanet Tracker</h1>
                             </span>
 
-                            <hr />
-                            <img src="https://via.placeholder.com/200" />
-
                             <p>Front end app that pulls data from the NASA exoplanet api. Displays the most up to date information on exoplanets using React.</p>
                             <hr />
                             <ul class="project-skills">
-                                <li class="skill-bubble">HTML</li>
-                                <li class="skill-bubble">CSS</li>
-                                <li class="skill-bubble">JavaScript</li>
                                 <li class="skill-bubble">ReactJS</li>
                             </ul>
                         </div>
@@ -134,23 +112,72 @@
                             <span>
                                 <h1>Daily Kanji</h1>
                             </span>
-                            <hr />
-                            <img src="https://via.placeholder.com/200" />
 
                             <p>Developed with React this web app pulls a Kanji character from a RESTful api</p>
                             <hr />
                             <ul class="project-skills">
-                                
-                                <li class="skill-bubble">HTML</li>
-                                <li class="skill-bubble">CSS</li>
-                                <li class="skill-bubble">JavaScript</li>
                                 <li class="skill-bubble">ReactJS</li>
                                 <li class="skill-bubble">Express.js</li>
                                 <li class="skill-bubble">MySQL</li>
                             </ul>
                         </div>
+                        <div class = "project-card">
+                            
+                            <span>
+                                <h1>Tip Calculator</h1>
+                            </span>
+
+                            <p>
+                                Single page React app that allows users to calculate the tip to be added to a bill.
+                            </p>
+                            <hr />
+                            <ul class="project-skills">
+                                <li class="skill-bubble">HTML</li>
+                                <li class="skill-bubble">CSS</li>
+                                <li class="skill-bubble">ReactJS</li>
+                            </ul>
+                        </div>
+                        <div class = "project-card">
+                            
+                            <span>
+                                <h1>Practice Log</h1>
+                            </span>
+
+                            <p>
+                                React app to allow users to keep track of thier music practice sessions. Stores the length of the sessions 
+                                and date recorded in a JSON text file.
+                            </p>
+                            <hr />
+                            <ul class="project-skills">
+                                <li class="skill-bubble">ReactJS</li>
+                                <li class="skill-bubble">Express.js</li>
+                                <li class="skill-bubble">MySQL</li>
+                            </ul>
+                        </div>
+                        <div class = "project-card">
+                            
+                            <span>
+                                <h1>Chip-8 Interpreter</h1>
+                            </span>
+
+                            <p>
+                                Small emulator to interpret instruction from a Chip-8 cpu and play the provided games. Capable of running all 22 games created for the Chip-8 architecture
+                            </p>
+
+                            <span class="skill-bubble">Github</span>
+
+                            <hr />
+
+
+                            <ul class="project-skills">
+                                <li class="skill-bubble">C++</li>
+                            </ul>
+                        </div>
+                    </div>
+
                     </div>
                 </section>
+                <!--
                 <section id="contact">
                     <div class="contact-me-left-col">
                         <h1>Contact</h1>
@@ -167,6 +194,7 @@
                         </form>
                     </div>
                 </section>
+            -->
             </div>
         </main>
     </body>
