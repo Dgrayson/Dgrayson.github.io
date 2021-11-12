@@ -126,10 +126,13 @@
 }
 
 .card-container {
+  width: 50%;
+  height: 50%;
+  margin: auto;
   display: grid;
   padding: 50px;
   grid-template-columns: repeat(3, 33%);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   color: white;
   font-size: 1.2em;
 }
@@ -244,10 +247,12 @@ nav ul li a:hover {
 }
 #home h1 {
   font-size: 5em;
+  margin-bottom: 0.7em;
 }
 #home p {
-  right: 24px;
-  font-size: 2em;
+  font-size: 1.2em;
+  width: 50%;
+  margin: auto;
 }
 
 .home-container {

@@ -27,14 +27,15 @@
 }
 
 .card-container{
+    width: 50%;
+    height: 50%;
+    margin: auto;
     display: grid;
     padding: 50px;
     grid-template-columns: repeat(3, 33%);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     color: white;
     font-size: 1.2em;
-
-
 }
 
 .project-card{
